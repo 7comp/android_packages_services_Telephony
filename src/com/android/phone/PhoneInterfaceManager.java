@@ -3290,20 +3290,6 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
 
     /*
      * {@hide}
-     * Returns the IMS Registration Status based on subId
-     */
-    public boolean isImsRegisteredForSubscriber(int subId) {
-        final Phone phone = getPhone(subId);
-
-        if (phone != null) {
-            return phone.isImsRegistered();
-        }
-        return false;
-    }
-
-
-    /*
-     * {@hide}
      * Returns the IMS Registration Status
      */
     public boolean isWifiCallingAvailable() {
